@@ -1,0 +1,6 @@
+{
+  "name": "BabyName AI",
+  "description": "Premium AI-powered baby name discovery landing page and interactive generator using Google Search grounding.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
