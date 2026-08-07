@@ -113,6 +113,9 @@ app.post("/api/generate-names", async (req, res) => {
 Based on the following custom parental preferences, search for and generate AT LEAST 10 (ideally 10 to 12) beautiful, meaningful baby names.
 Make sure you perform Google searches to verify current baby name popularity trends, accurate spelling, pronunciation, meaning, and cultural history.
 
+DISCOVERY RE-TRIGGER / NONCE: ${req.body.requestNonce || Date.now()}
+CRITICAL INSTRUCTION FOR FRESHNESS: The user clicked "Discover with AI" to generate/refresh names. Provide a BRAND NEW, FRESH, and DIVERSE set of recommendations that differ from default or previous runs while strictly adhering to all user-selected criteria.
+
 CRITICAL REQUIREMENT - STRICT FILTER COMPLIANCE:
 1. EVERY SINGLE NAME MUST STRICTLY honor all user-selected choices below:
    - Gender: ${gender || "Any"} (If "Boy" or "Girl", ONLY return names for that gender or Unisex).
@@ -854,8 +857,11 @@ function getMockNames(filters: any) {
     }
   }
 
+  // Shuffle array helper for freshness when Discover with AI is clicked
+  const shuffledResults = [...results].sort(() => Math.random() - 0.5);
+
   // Format final response array and mark #1 Best Match
-  return results.slice(0, 12).map((item, index) => ({
+  return shuffledResults.slice(0, 12).map((item, index) => ({
     ...item,
     isBestMatch: index === 0,
     bestMatchReason: index === 0 ? `Top AI Recommendation: ${item.name} is the optimal choice matching all your selected criteria (${item.gender}, ${cultureKey} Origin, ${item.language}, starting with '${startsWith || "Any"}').` : undefined

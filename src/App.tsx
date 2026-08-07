@@ -111,7 +111,10 @@ export default function App() {
       const response = await fetch("/api/generate-names", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(filters)
+        body: JSON.stringify({
+          ...filters,
+          requestNonce: `${Date.now()}_${Math.random().toString(36).substring(2, 8)}`
+        })
       });
 
       if (!response.ok) {
@@ -123,6 +126,11 @@ export default function App() {
         setNames(data.names);
         setSearchSources(data.searchSources || []);
         setError(null);
+        
+        // Scroll smoothly to result grid so user instantly sees new names
+        setTimeout(() => {
+          scrollToId("result-grid-container");
+        }, 100);
       } else {
         setNames([]);
         throw new Error("No names found matching your criteria.");
