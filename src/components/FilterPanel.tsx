@@ -360,8 +360,7 @@ export default function FilterPanel({
           className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] hover:from-[#4F46E5]/90 hover:to-[#7C3AED]/90 text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-indigo-600/10 transition-all duration-300 disabled:opacity-50 cursor-pointer"
           id="btn-discover-ai-names"
         >
-          <Sparkles className="w-4 h-4 animate-pulse" />
-          {isLoading ? "Analyzing..." : "Discover with AI"}
+          {isLoading ? "Analyzing..." : "Discover Names"}
         </button>
 
         {/* Sidebar Mini Testimonial Quote */}

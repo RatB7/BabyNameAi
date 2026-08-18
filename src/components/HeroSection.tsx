@@ -60,8 +60,7 @@ export default function HeroSection({ onExploreClick, onAiClick }: HeroSectionPr
                 className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white border border-[#E2E8F0] hover:border-[#CBD5E1] text-[#0F172A] font-semibold text-base transition-all duration-300 hover:bg-[#F8FAFC] hover:-translate-y-0.5 cursor-pointer"
                 id="btn-generate-ai"
               >
-                <Sparkles className="w-4 h-4 mr-2 text-[#7C3AED]" />
-                Generate with AI
+                Discover Names
               </button>
             </motion.div>
 
