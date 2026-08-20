@@ -936,8 +936,14 @@ async function startServer() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`BabyName AI full-stack server running on http://0.0.0.0:${PORT}`);
+    console.log(`Server running on http://0.0.0.0:${PORT}`);
   });
 }
 
-startServer();
+// Only start the server natively if we are not in a Vercel serverless environment
+if (!process.env.VERCEL) {
+  startServer();
+}
+
+// Export the Express app for Vercel Serverless integration
+export default app;
