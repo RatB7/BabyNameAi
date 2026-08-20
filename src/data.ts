@@ -299,7 +299,7 @@ export const FEATURE_CARDS = [
 
 export const TESTIMONIALS = [
   {
-    quote: "We were completely stuck choosing a name that honored both my French and my husband's Indian heritage. BabyName AI found 'Siddharth' and 'Amara'—explaining exactly how the names bridge both cultures. The meaning explorer is incredible!",
+    quote: "We were completely stuck choosing a name that honored both my French and my husband's Indian heritage. New Baby Name found 'Siddharth' and 'Amara'—explaining exactly how the names bridge both cultures. The meaning explorer is incredible!",
     author: "Elena & Siddharth Patel",
     location: "London, UK",
     tag: "Multicultural Family"
@@ -325,7 +325,7 @@ export const FAQS = [
   },
   {
     question: "Can I filter baby names by religion and culture?",
-    answer: "Absolutely! BabyName AI lets you select specific religious and cultural alignments—including Christian, Hindu, Muslim, Jewish, Buddhist, Celtic, and Secular options. Our generator uses Google Search grounding to ensure historical and religious connections are highly accurate."
+    answer: "Absolutely! New Baby Name lets you select specific religious and cultural alignments—including Christian, Hindu, Muslim, Jewish, Buddhist, Celtic, and Secular options. Our generator uses Google Search grounding to ensure historical and religious connections are highly accurate."
   },
   {
     question: "Can I search for names by country of origin?",
@@ -333,7 +333,7 @@ export const FAQS = [
   },
   {
     question: "How does the AI recommend names?",
-    answer: "BabyName AI utilizes Google's advanced Gemini 3.5 Flash model grounded with real-time Google Search results. Rather than just returning from a static database, the AI actively searches the live web to check spelling, popularity charts, meanings, sibling pairings, and local cultural context to provide the most precise recommendations."
+    answer: "New Baby Name utilizes Google's advanced Gemini 3.5 Flash model grounded with real-time Google Search results. Rather than just returning from a static database, the AI actively searches the live web to check spelling, popularity charts, meanings, sibling pairings, and local cultural context to provide the most precise recommendations."
   },
   {
     question: "What makes a good baby name?",

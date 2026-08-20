@@ -77,7 +77,7 @@ export default function BrandLogo({ size = "md", showText = true, className = ""
       {showText && (
         <div className="flex flex-col">
           <span className={`${dim.text} font-black tracking-tight leading-none bg-clip-text text-transparent bg-gradient-to-r from-[#4F46E5] via-[#7C3AED] to-[#06B6D4]`}>
-            BabyName<span className="text-[#0F172A]">.AI</span>
+            New Baby Name
           </span>
           <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-widest leading-none mt-0.5">
             Smart Name Discovery

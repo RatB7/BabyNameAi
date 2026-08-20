@@ -153,7 +153,7 @@ export default function App() {
   // Copy saved list to clipboard helper
   const handleCopyFavoritesList = async () => {
     if (favorites.length === 0) return;
-    const text = `My Saved Baby Names from BabyName AI ✨\n\n${favorites.map((f, i) => `${i + 1}. ${f}`).join("\n")}`;
+    const text = `My Saved Baby Names from New Baby Name ✨\n\n${favorites.map((f, i) => `${i + 1}. ${f}`).join("\n")}`;
     const success = await copyToClipboard(text);
     if (success) {
       setFavCopied(true);

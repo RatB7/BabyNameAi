@@ -102,7 +102,7 @@ export default function HeroSection({ onExploreClick, onAiClick }: HeroSectionPr
               <div className="relative w-full h-full bg-white rounded-3xl border border-[#F1F5F9] shadow-2xl shadow-indigo-100/50 p-8 flex flex-col justify-between items-center overflow-hidden">
                 <div className="absolute top-4 left-4 right-4 flex justify-between text-xs text-[#94A3B8] font-medium tracking-wider">
                   <span>CELESTIAL HARMONY</span>
-                  <span>BABYNAME AI</span>
+                  <span>NEW BABY NAME</span>
                 </div>
                 
                 <div className="my-auto flex flex-col items-center">

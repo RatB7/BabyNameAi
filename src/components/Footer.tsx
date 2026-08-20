@@ -87,7 +87,7 @@ export default function Footer({ onOpenRegulatory }: FooterProps) {
 
         {/* Bottom copyright */}
         <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} BabyName AI. All rights reserved globally.</p>
+          <p>© {new Date().getFullYear()} New Baby Name. All rights reserved globally.</p>
           
           <div className="flex items-center gap-1.5">
             <span>Made with</span>
